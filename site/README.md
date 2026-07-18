@@ -18,7 +18,18 @@ npm run build
 npm run preview
 ```
 
-## Deploy (Vercel)
+## Deploy (Cloudflare Pages)
+1. Push code to GitHub (or GitLab).
+2. Go to [Cloudflare Pages](https://pages.cloudflare.com/) and sign in.
+3. Click **Create a project** → **Connect to Git** → select your repo.
+4. Configure build settings:
+   - **Build command:** `npm run build`
+   - **Build output directory:** `dist`
+   - Leave other settings as default.
+5. Click **Save and Deploy**. Cloudflare will build and deploy on every push.
+6. Once live, go to your Cloudflare domain settings and update DNS to point to the Pages project.
+
+## Deploy (Vercel — Alternative)
 - Connect the repo to Vercel (https://vercel.com/new).
 - Set the project root to `/` and deploy.
 - For domain via Cloudflare: add the Vercel-provided records in Cloudflare DNS or use Vercel's instructions to configure Cloudflare.
