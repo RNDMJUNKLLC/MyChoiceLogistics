@@ -11,7 +11,8 @@ const services = [
 export default function Services(){
   return (
     <section aria-labelledby="services-heading" className="py-8">
-      <h2 id="services-heading" className="text-2xl font-bold mb-4">Our Services</h2>
+      <h2 id="services-heading" className="text-2xl font-bold mb-4">Medical Courier Services</h2>
+      <p className="text-sm mb-6 max-w-3xl">Reliable medical courier solutions for clinics, labs, hospitals, and healthcare providers in Virginia, Maryland, Pennsylvania, and New Jersey.</p>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {services.map(s=>(
           <div key={s.title} className="p-4 border rounded-lg bg-white/60">
