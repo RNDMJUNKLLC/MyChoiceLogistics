@@ -6,7 +6,7 @@ import ContactBar from "./components/ContactBar";
 import Footer from "./components/Footer";
 
 export default function App(){
-  const phone = "REPLACE_WITH_PHONE";
+  const phone = "908 - 636 - 3926";
   return (
     <div className="min-h-screen flex flex-col">
       <ContactBar phone={phone} />
